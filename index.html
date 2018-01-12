@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Jogo da velha</title>
+		<script src="jquery-2.2.1.js"></script>
+		<script src="jogo.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		
+		<div id="pagina_inicial" align="center">
+ 			<table width="600px">
+				<tbody>
+					<tr>
+						<td colspan="3" align="center"> JOGO DA VELHA</td>
+					</tr>
+
+					<tr>
+						<td align="center">
+							<img src="imagens/jogador_1.png">
+							<br />
+							<input id="entrada_apelido_jogador1" type="text" maxlength="10" name="" placeholder="Digite seu nome" style="border: 0px;">
+
+						</td>
+						<td align="center" ><img id="btn_iniciar_jogo" src="imagens/iniciar.png"></td>
+						<td align="center">
+							<img src="imagens/jogador_2.png">
+							<br />
+							<input id="entrada_apelido_jogador2" type="text" maxlength="10" name="" placeholder="Digite seu nome" style="border: 0px;">
+						</td>
+					</tr>
+
+				</tbody>	
+			</table>	
+		</div>
+		<!--  DIV DO JOGO PRINCIPAL -->
+		<div id="palco_jogo">
+			
+			<div class="tela_jog_tab">
+				<img src="imagens/jogador_1.png" />
+				<br/>
+				<span id="nome_jogador1"></span>
+			</div>
+
+			<div class="tela_jog_tab">
+				<table>
+					<tr>
+						<td style="border-bottom: solid 1px red; border-right: solid 1px red;">
+						  <div class="jogada" id="a-1" ></div>
+						</td>
+						<td style="border-bottom: solid 1px red; border-right: solid 1px red;">
+							<div class="jogada" id="a-2"></div>
+						</td>
+						<td style="border-bottom: solid 1px red;">
+							<div class="jogada" id="a-3"></div>
+						</td>
+					</tr>
+					<tr>
+						<td style="border-bottom: solid 1px red; border-right: solid 1px red;">
+						  <div class="jogada" id="b-1"></div>
+						</td>
+						<td style="border-bottom: solid 1px red; border-right: solid 1px red;">
+							<div class="jogada" id="b-2"></div>
+						</td>
+						<td style="border-bottom: solid 1px red;">
+							<div class="jogada" id="b-3"></div>
+						</td>
+					</tr>
+					<tr>
+						<td style="border-right: solid 1px red;">
+						  <div class="jogada" id="c-1"></div>
+						</td>
+						<td style="border-right: solid 1px red;">
+							<div class="jogada" id="c-2"></div>
+						</td>
+						<td>
+							<div class="jogada" id="c-3"></div>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="tela_jog_tab">
+				<img src="imagens/jogador_2.png" />
+				<br/>
+				<span id="nome_jogador2"></span>
+			<div>
+		</div>
+		<!-- /DIV DO JOGO PRINCIPAL -->
+		<!-- rodapé -->
+<!-- 		<footer>
+			
+		</footer> -->
+	<!-- <div class="footer">
+		
+
+	</div> -->
+	</body>
+</html>
